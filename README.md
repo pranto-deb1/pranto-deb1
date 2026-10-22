@@ -66,7 +66,7 @@
 </div>
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=pranto-deb1&theme=tokyo-night&hide_border=true&bg_color=0a0e17&color=00d4ff&line=7b61ff&point=00ffaa&area=true" alt="Activity Graph"/>
+  <img src="https://github-readme-activity-graph-nu-flame.vercel.app/graph?username=pranto-deb1&theme=tokyo-night&hide_border=true&bg_color=0a0e17&color=00d4ff&line=7b61ff&point=00ffaa&area=true" alt="Activity Graph"/>
 </div>
 
 ---
