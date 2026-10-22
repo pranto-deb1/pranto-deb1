@@ -87,10 +87,10 @@
 
 <div align="center">
   <a href="https://github.com/pranto-deb1/Zen-Blogs">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=pranto-deb1&repo=YOUR_REPO_1&theme=tokyonight&hide_border=true&bg_color=0a0e17&title_color=00d4ff&text_color=c9d1d9" alt="Project 1"/>
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=pranto-deb1&repo=Zen-Blogs&theme=tokyonight&hide_border=true&bg_color=0a0e17&title_color=00d4ff&text_color=c9d1d9" alt="Project 1"/>
   </a>
   <a href="https://github.com/pranto-deb1/L2-Assignment-2">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=pranto-deb1&repo=YOUR_REPO_2&theme=tokyonight&hide_border=true&bg_color=0a0e17&title_color=00d4ff&text_color=c9d1d9" alt="Project 2"/>
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=pranto-deb1&repo=L2-Assignment-2&theme=tokyonight&hide_border=true&bg_color=0a0e17&title_color=00d4ff&text_color=c9d1d9" alt="Project 2"/>
   </a>
 </div>
 
