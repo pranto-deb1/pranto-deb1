@@ -13,7 +13,7 @@
   <a href="https://www.linkedin.com/in/pranto-deb1/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
   <a href="https://github.com/pranto-deb1"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
   <a href="mailto:your.email@example.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
-  <img src="https://komarev.com/ghpvc/?username=pranto-deb1&label=PROFILE+VIEWS&color=00d4ff&style=for-the-badge" alt="Profile views"/>
+  <img src="https://komarev.com/ghpvc/?username=pranto-deb1&label=PROFILE+VIEWS&color=00d4ff&style=for-the-badge&v=2" alt="Profile views"/>
 </p>
 
 </div>
