@@ -1,0 +1,72 @@
+name: Generate Skills Marquee
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate animated SVG marquee
+        run: |
+          mkdir -p assets
+          cat > assets/skills-marquee.svg << 'SVGEOF'
+          <svg xmlns="http://www.w3.org/2000/svg" width="900" height="120" viewBox="0 0 900 120">
+            <defs>
+              <style>
+                @keyframes scroll {
+                  0% { transform: translateX(0); }
+                  100% { transform: translateX(-50%); }
+                }
+                .track {
+                  animation: scroll 20s linear infinite;
+                  display: flex;
+                  gap: 40px;
+                  align-items: center;
+                }
+                .icon { width: 64px; height: 64px; filter: drop-shadow(0 0 12px #58a6ff); }
+              </style>
+            </defs>
+            <rect width="900" height="120" fill="#0d1117" rx="16"/>
+            <g class="track" transform="translate(0, 28)">
+              <!-- First group of icons -->
+              <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="icon" width="64" height="64"/>
+              <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" class="icon" width="64" height="64"/>
+              <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" class="icon" width="64" height="64"/>
+              <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="icon" width="64" height="64"/>
+              <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="icon" width="64" height="64"/>
+              <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" class="icon" width="64" height="64"/>
+              <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" class="icon" width="64" height="64"/>
+              <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" class="icon" width="64" height="64"/>
+              <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg" class="icon" width="64" height="64"/>
+              <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="icon" width="64" height="64"/>
+              <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="icon" width="64" height="64"/>
+              <!-- Duplicate for seamless loop -->
+              <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="icon" width="64" height="64"/>
+              <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" class="icon" width="64" height="64"/>
+              <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" class="icon" width="64" height="64"/>
+              <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="icon" width="64" height="64"/>
+              <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="icon" width="64" height="64"/>
+              <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" class="icon" width="64" height="64"/>
+              <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" class="icon" width="64" height="64"/>
+              <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" class="icon" width="64" height="64"/>
+              <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg" class="icon" width="64" height="64"/>
+              <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="icon" width="64" height="64"/>
+              <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="icon" width="64" height="64"/>
+            </g>
+          </svg>
+          SVGEOF
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add assets/skills-marquee.svg
+          git commit -m "chore: update skills marquee [skip ci]" || exit 0
+          git push
