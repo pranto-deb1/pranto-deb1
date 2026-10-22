@@ -1,0 +1,118 @@
+<svg width="820" height="420" viewBox="0 0 820 420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e17"/>
+      <stop offset="100%" stop-color="#0f1a2e"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#7b61ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="820" height="420" rx="14" fill="url(#bg)"/>
+  <rect width="820" height="420" rx="14" fill="none" stroke="#16283f" stroke-width="1"/>
+
+  <!-- Traces -->
+  <path d="M410 160 L410 118 L230 118 L230 100" stroke="#1e3550" stroke-width="1.5" fill="none"/>
+  <path d="M410 160 L410 100" stroke="#1e3550" stroke-width="1.5" fill="none"/>
+  <path d="M410 160 L410 118 L590 118 L590 100" stroke="#1e3550" stroke-width="1.5" fill="none"/>
+  <path d="M410 260 L410 302 L230 302 L230 320" stroke="#1e3550" stroke-width="1.5" fill="none"/>
+  <path d="M410 260 L410 302 L590 302 L590 320" stroke="#1e3550" stroke-width="1.5" fill="none"/>
+  <path d="M380 210 L180 210" stroke="#1e3550" stroke-width="1.5" fill="none"/>
+  <path d="M440 210 L640 210" stroke="#1e3550" stroke-width="1.5" fill="none"/>
+  <path d="M410 260 L410 340" stroke="#1e3550" stroke-width="1.5" fill="none"/>
+
+  <!-- Pulsing traces (SMIL) -->
+  <path d="M410 160 L410 118 L230 118 L230 100" stroke="#00d4ff" stroke-width="1.5" fill="none" stroke-dasharray="6 40">
+    <animate attributeName="stroke-dashoffset" from="0" to="-460" dur="3s" repeatCount="indefinite"/>
+  </path>
+  <path d="M410 160 L410 100" stroke="#00d4ff" stroke-width="1.5" fill="none" stroke-dasharray="6 40">
+    <animate attributeName="stroke-dashoffset" from="0" to="-460" dur="4.5s" repeatCount="indefinite"/>
+  </path>
+  <path d="M410 160 L410 118 L590 118 L590 100" stroke="#00d4ff" stroke-width="1.5" fill="none" stroke-dasharray="6 40">
+    <animate attributeName="stroke-dashoffset" from="0" to="-460" dur="6s" repeatCount="indefinite"/>
+  </path>
+  <path d="M410 260 L410 302 L230 302 L230 320" stroke="#00d4ff" stroke-width="1.5" fill="none" stroke-dasharray="6 40">
+    <animate attributeName="stroke-dashoffset" from="0" to="-460" dur="3.4s" repeatCount="indefinite"/>
+  </path>
+  <path d="M410 260 L410 302 L590 302 L590 320" stroke="#00d4ff" stroke-width="1.5" fill="none" stroke-dasharray="6 40">
+    <animate attributeName="stroke-dashoffset" from="0" to="-460" dur="5s" repeatCount="indefinite"/>
+  </path>
+  <path d="M380 210 L180 210" stroke="#00d4ff" stroke-width="1.5" fill="none" stroke-dasharray="6 40">
+    <animate attributeName="stroke-dashoffset" from="0" to="-460" dur="6.5s" repeatCount="indefinite"/>
+  </path>
+  <path d="M440 210 L640 210" stroke="#00d4ff" stroke-width="1.5" fill="none" stroke-dasharray="6 40">
+    <animate attributeName="stroke-dashoffset" from="0" to="-460" dur="3s" repeatCount="indefinite"/>
+  </path>
+  <path d="M410 260 L410 340" stroke="#00d4ff" stroke-width="1.5" fill="none" stroke-dasharray="6 40">
+    <animate attributeName="stroke-dashoffset" from="0" to="-460" dur="4.5s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- Center core -->
+  <circle cx="410" cy="210" r="70" fill="#00d4ff" opacity="0.15">
+    <animate attributeName="r" values="70;78;70" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.15;0.3;0.15" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="410" cy="210" r="52" fill="#0d1726" stroke="url(#core)" stroke-width="2"/>
+  <circle cx="410" cy="210" r="60" fill="none" stroke="#00d4ff" stroke-width="1" stroke-dasharray="3 6" opacity="0.5">
+    <animateTransform attributeName="transform" type="rotate" from="0 410 210" to="360 410 210" dur="18s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="410" cy="210" r="68" fill="none" stroke="#7b61ff" stroke-width="1" stroke-dasharray="2 10" opacity="0.4">
+    <animateTransform attributeName="transform" type="rotate" from="0 410 210" to="-360 410 210" dur="26s" repeatCount="indefinite"/>
+  </circle>
+  <text x="410" y="205" font-family="monospace" font-size="13" font-weight="700" text-anchor="middle" fill="#e6f1ff">FULL STACK</text>
+  <text x="410" y="222" font-family="monospace" font-size="9" text-anchor="middle" fill="#7b8aa3">DEVELOPER</text>
+
+  <!-- React -->
+  <circle cx="230" cy="70" r="30" fill="#0d1726" stroke="#61dafb" stroke-width="1.8"/>
+  <circle cx="230" cy="70" r="34" fill="none" stroke="#61dafb" stroke-width="0.8" opacity="0.35"/>
+  <text x="230" y="67" font-family="monospace" font-size="11" font-weight="600" text-anchor="middle" fill="#61dafb">React</text>
+  <text x="230" y="80" font-family="monospace" font-size="8" text-anchor="middle" fill="#6a7a92">FRONTEND</text>
+
+  <!-- Next.js -->
+  <circle cx="410" cy="70" r="30" fill="#0d1726" stroke="#e6f1ff" stroke-width="1.8"/>
+  <circle cx="410" cy="70" r="34" fill="none" stroke="#e6f1ff" stroke-width="0.8" opacity="0.35"/>
+  <text x="410" y="67" font-family="monospace" font-size="11" font-weight="600" text-anchor="middle" fill="#e6f1ff">Next.js</text>
+  <text x="410" y="80" font-family="monospace" font-size="8" text-anchor="middle" fill="#6a7a92">FRONTEND</text>
+
+  <!-- Tailwind -->
+  <circle cx="590" cy="70" r="30" fill="#0d1726" stroke="#38bdf8" stroke-width="1.8"/>
+  <circle cx="590" cy="70" r="34" fill="none" stroke="#38bdf8" stroke-width="0.8" opacity="0.35"/>
+  <text x="590" y="67" font-family="monospace" font-size="11" font-weight="600" text-anchor="middle" fill="#38bdf8">Tailwind</text>
+  <text x="590" y="80" font-family="monospace" font-size="8" text-anchor="middle" fill="#6a7a92">STYLING</text>
+
+  <!-- Node.js -->
+  <circle cx="230" cy="350" r="30" fill="#0d1726" stroke="#68a063" stroke-width="1.8"/>
+  <circle cx="230" cy="350" r="34" fill="none" stroke="#68a063" stroke-width="0.8" opacity="0.35"/>
+  <text x="230" y="347" font-family="monospace" font-size="11" font-weight="600" text-anchor="middle" fill="#68a063">Node.js</text>
+  <text x="230" y="360" font-family="monospace" font-size="8" text-anchor="middle" fill="#6a7a92">BACKEND</text>
+
+  <!-- Express -->
+  <circle cx="590" cy="350" r="30" fill="#0d1726" stroke="#e6f1ff" stroke-width="1.8"/>
+  <circle cx="590" cy="350" r="34" fill="none" stroke="#e6f1ff" stroke-width="0.8" opacity="0.35"/>
+  <text x="590" y="347" font-family="monospace" font-size="11" font-weight="600" text-anchor="middle" fill="#e6f1ff">Express</text>
+  <text x="590" y="360" font-family="monospace" font-size="8" text-anchor="middle" fill="#6a7a92">API</text>
+
+  <!-- MongoDB -->
+  <circle cx="150" cy="210" r="30" fill="#0d1726" stroke="#47a248" stroke-width="1.8"/>
+  <circle cx="150" cy="210" r="34" fill="none" stroke="#47a248" stroke-width="0.8" opacity="0.35"/>
+  <text x="150" y="207" font-family="monospace" font-size="11" font-weight="600" text-anchor="middle" fill="#47a248">MongoDB</text>
+  <text x="150" y="220" font-family="monospace" font-size="8" text-anchor="middle" fill="#6a7a92">DOCUMENT</text>
+
+  <!-- PostgreSQL -->
+  <circle cx="670" cy="210" r="30" fill="#0d1726" stroke="#336791" stroke-width="1.8"/>
+  <circle cx="670" cy="210" r="34" fill="none" stroke="#336791" stroke-width="0.8" opacity="0.35"/>
+  <text x="670" y="205" font-family="monospace" font-size="11" font-weight="600" text-anchor="middle" fill="#5a9fd4">PostgreSQL</text>
+  <text x="670" y="220" font-family="monospace" font-size="8" text-anchor="middle" fill="#6a7a92">RELATIONAL</text>
+
+  <!-- Prisma -->
+  <circle cx="410" cy="370" r="30" fill="#0d1726" stroke="#5a67d8" stroke-width="1.8"/>
+  <circle cx="410" cy="370" r="34" fill="none" stroke="#5a67d8" stroke-width="0.8" opacity="0.35"/>
+  <text x="410" y="367" font-family="monospace" font-size="11" font-weight="600" text-anchor="middle" fill="#8b9af0">Prisma</text>
+  <text x="410" y="380" font-family="monospace" font-size="8" text-anchor="middle" fill="#6a7a92">ORM</text>
+
+  <!-- Scanline -->
+  <rect x="0" y="0" width="820" height="1.5" fill="#00d4ff" opacity="0.25">
+    <animate attributeName="y" values="0;420;0" dur="8s" repeatCount="indefinite"/>
+  </rect>
+</svg>
