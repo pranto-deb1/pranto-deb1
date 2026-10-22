@@ -49,7 +49,6 @@
 
 </div>
 
-> ⚠️ **The second image above (skills-circuit.svg) requires you to manually generate it once.** See "How to Generate Skill Diagram" below.
 
 ---
 
